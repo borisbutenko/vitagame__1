@@ -14,6 +14,7 @@ import rename       from 'gulp-rename';
 import uglify       from 'gulp-uglify';
 import htmlmin      from 'gulp-htmlmin';
 import pug          from 'gulp-pug';
+import sort         from 'gulp-sort';
 import del          from 'del';
 
 const dirs = {
@@ -147,6 +148,7 @@ gulp.task('libs', () => {
     del([cleanPath.libs], {force: true});
 
 return gulp.src(`${dirs.from}libs/**/*.js`)
+    .pipe(sort())
     .pipe(concat('libs.js'))
     .pipe(gulp.dest(libsPath.to))
     .pipe(rename({suffix: '.min'}))
@@ -204,9 +206,9 @@ return gulp.src(pugPath.from)
         basedir: '../',
         pretty: true
     }))
-    .pipe(htmlmin({
-        collapseWhitespace: true
-    }))
+    // .pipe(htmlmin({
+    //     collapseWhitespace: true
+    // }))
     .pipe(gulp.dest(pugPath.to))
     .pipe(notify({ message: 'Pug task complete' }));
 });

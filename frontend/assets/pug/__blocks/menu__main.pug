@@ -1,0 +1,23 @@
+- var menuLinks = {'home':null,'about us':null,'services':null,'products':['oil filter','fuel filter','air filter'],'filter search':null,'contacts':null,}
+
+nav.navbar.navbar-default.navbar-fixed-top
+    .container-fluid
+        .navbar-header
+            button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#menu-main' aria-expanded='false')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+        #menu-main.collapse.navbar-collapse
+            ul.nav.navbar-nav.menu.menu-main
+                each link, val in menuLinks
+                    if val != null
+                        li.menu-main__item
+                            a.menu-main__link(href='#0')= link
+                    else
+                        li.menu-main__item.dropdown
+                            a.menu-main__link.dropdown-toggle(href='#0' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')= link
+                            ul.menu.menu-sub.dropdown-menu
+                                each sub in val
+                                    li.menu-sub__item
+                                        a.menu-sub__link(href='#0')= sub
