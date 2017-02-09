@@ -208,5 +208,5 @@ return gulp.src(pugPath.from)
         collapseWhitespace: true
     }))
     .pipe(gulp.dest(pugPath.to))
-    .pipe(notify({ message: 'Pug task complete' }));
+
 });
