@@ -1,0 +1,57 @@
+- var quickLinksLeft  = [{name : 'About Us', url : '#0'}, {name : 'All Servisec', url : '#0'}, {name : 'Job Careers', url : '#0'}, {name : 'Our Products', url : '#0'}]
+- var quickLinksRight = [{name : 'Latest News', url : '#0'}, {name : 'Our Project', url : '#0'}, {name : 'Pricing Plans', url : '#0'}, {name : "FAQ's", url : '#0'}, {name : 'Contact Us', url : '#0'}]
+
+footer.footer
+	section.section.section__footer-top
+		.container
+			.row
+				.col-lg-3.col-md-3.col-sm-6.col-xs-12
+					.footer__widget
+						.footer__widget__title
+							img.footer__widget__logo(src='assets/img/logo.png' alt='')
+						.footer__widget-body
+							p.footer__widget__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						include social
+				.col-lg-3.col-md-3.col-sm-6.col-xs-12
+					.footer__widget.quick-links
+						.footer__widget__title.footer__widget__title-border
+							h3 Quick Links
+						ul.quick-links__list
+							each left in quickLinksLeft
+								li.quick-links__item
+									a.quick-links__link(href=left.url)= left.name
+						ul.quick-links__list
+							each right in quickLinksRight
+								li.quick-links__item
+									a.quick-links__link(href=right.url)= right.name
+				.col-lg-3.col-md-3.col-sm-6.col-xs-12
+					.footer__widget
+						.footer__widget__title.footer__widget__title-border
+							h3 INSTAGRAM
+				.col-lg-3.col-md-3.col-sm-6.col-xs-12
+					.footer__widget
+						.footer__widget__title.footer__widget__title-border
+							h3 GET IN TOUCH
+						.contacts
+							ul.contacts__list
+								li.contacts__item
+									span.flaticon-earth-grid.contacts__icon
+									p.contacts__content <span>address:</span> 20c Factory Street, Newyork, NY 10205'
+								li.contacts__item
+									span.flaticon-email-envelope-back-symbol-on-phone-screen.contacts__icon
+									p.contacts__content <span>call us:</span> +(321) 48 659 779 Mail@Industrypress.com
+								li.contacts__item
+									span.flaticon-technology-1.contacts__icon
+									p.contacts__content <span>fax:</span>+(321) 58 759 897
+								li.contacts__item
+									span.flaticon-clock.contacts__icon
+									p.contacts__content <span>mon - sat day:</span> 10.00 - 18.00 Sunday Closed
+	section.section.section__footer-bot
+		.container
+			.row
+				.col-lg-5.col-md-6.col-sm-12.col-xs-12
+					.copyright
+						p.copyright__text Copyright © 2016 Industry Press Theme by
+							a.copyright__link(href='#0') Vitagame
+				.col-lg-7.col-md-6.col-sm-12.col-xs-12
+					include menu__footer

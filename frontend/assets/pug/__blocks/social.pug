@@ -1,0 +1,7 @@
+- var social = [{name : 'fa-facebook', url : '#0'}, {name : 'fa-twitter', url : '#0'}, {name : 'fa-google-plus', url : '#0'}, {name : 'fa-linkedin', url : '#0'}]
+
+ul.footer__social.social
+	each item in social
+		li.social__item
+			a.social__link(href=item.url)
+				i.fa(class=item.name aria-hidden='true')

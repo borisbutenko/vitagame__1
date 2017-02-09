@@ -1,0 +1,96 @@
+*
+  margin: 0
+
+html,
+body
+  height: 100%
+
+.main
+  min-height: 100%
+  /* equal to footer height */
+  margin-bottom: -15rem
+  &::after
+    content: ""
+    display: block
+
+.footer
+  height: 15rem
+
+.section__footer-top
+  background: #292929
+  padding: 5rem 0
+
+.footer__widget
+  &__title
+    position: relative
+    margin-bottom: 4rem
+    text-transform: uppercase
+    & > h3
+      font-weight: 700
+      margin: 0
+      padding-bottom: 2.4rem
+    &-border::before
+      background: #ffffff none repeat scroll 0 0
+      content: ""
+      height: .2rem
+      left: 0
+      position: absolute
+      bottom: 0
+      width: 7rem
+  &__logo
+    width: 20rem
+  &__title
+    color: #fff
+  &__text
+    border-bottom: .1rem solid #313131
+    margin-bottom: 2.5rem
+    overflow: hidden
+    padding-bottom: 2.5rem
+    color: #fff
+
+.quick-links
+  &__list
+    float: left
+    width: 50%
+  &__item
+    line-height: 3.6rem
+  &__link
+    color: #fff
+    transition: all 500ms ease
+    &:hover
+      text-decoration: underline
+      color: #fdc716
+
+.contacts
+  &__item
+    height: 5rem
+    margin-right: 1rem
+  &__icon
+    float: left
+    margin-right: 1.5rem
+    &::before
+      color: #fdc716
+      font-size: 2.2rem
+  &__content
+    color: #9e9e9e
+    line-height: 2.2rem
+    & > span
+      color: #fff
+      font-weight: 600
+      text-transform: uppercase
+
+.section__footer-bot
+  background: #292929 none repeat scroll 0 0
+  border-top: .1rem solid #313131
+  padding-top: 1rem
+
+.copyright
+  padding: 1.5rem 0
+  &__text
+    color: #fff
+  &__link
+    margin-left: .5rem
+    color: #fdc716
+    transition: all 500ms ease
+    &:hover
+      color: #fff

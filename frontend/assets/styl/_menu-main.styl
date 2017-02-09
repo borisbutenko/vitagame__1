@@ -1,0 +1,66 @@
+.menu-main
+  background: #292929
+  &__list
+    width: 100%
+  &__logo
+    width: 20rem
+    margin-right: 1.5rem
+    padding-top: .6rem
+    float: right
+  &__item
+    margin-right: .2rem
+    padding: 1rem 0
+    &:last-of-type > a::before
+      background: unset
+    &:hover
+      & > a
+        color: #fdc716
+        opacity: 1
+      &::before
+        opacity: 1 !important
+        -webkit-transform: rotate(180deg)
+        transform: rotate(180deg)
+    &-active
+      &::before
+        opacity: 1 !important
+        -webkit-transform: rotate(180deg)
+        transform: rotate(180deg)
+    &::before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 0
+      margin-left: -.1rem
+      width: .1rem
+      height: 6.6rem
+      background: #fdc716
+      opacity: 0
+      -webkit-transform: rotate(0deg)
+      transform: rotate(0deg)
+      transition: all 500ms ease
+  &__link
+    background: #292929
+    color: #fff
+    display: block
+    font-size: 1.6rem
+    font-weight: 600
+    line-height: 2rem
+    opacity: 1
+    padding: 1.3rem 2.3rem !important
+    position: relative
+    text-transform: uppercase
+    transition: all 500ms ease
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      right: -.2rem
+      width: .2rem
+      height: 100%
+      background: url('../img/menu-border.png') center center no-repeat
+    &-dropdown
+      &::after
+        font-family: 'FontAwesome'
+        content: "\f0d7"
+        margin-left: .5rem
+        transition: all 500ms ease
