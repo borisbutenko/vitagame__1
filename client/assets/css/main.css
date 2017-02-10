@@ -10832,6 +10832,9 @@ body {
   background-color: #fdc716;
   border-color: #fdc716;
 }
+.form__search select + span.select2 {
+  margin-bottom: 2rem;
+}
 @media (max-width: 992px) {
   .menu-main__logo {
     display: none;
