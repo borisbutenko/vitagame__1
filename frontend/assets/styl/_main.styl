@@ -10,6 +10,73 @@ ul
   color: #292929
   text-transform: uppercase
 
+.input
+  font-family: "Eurosile Bold Condensed",Helvetica,Arial,sans-serif
+  border: .1rem solid #eaeaea
+  color: #9e9e9e
+  display: block
+  height: 5rem
+  margin-bottom: 2rem
+  padding: 0 1.5rem
+  transition: all 500ms ease 0s
+  width: 100%
+  text-transform: capitalize
+  outline: none
+  &:focus
+    border: .1rem solid #fdc716
+
+.textarea
+  font-family: "Eurosile Bold Condensed",Helvetica,Arial,sans-serif
+  height: 11rem
+  padding: 1.5rem
+  border: .1rem solid #eaeaea
+  color: #9e9e9e
+  display: block
+  margin-bottom: 2rem
+  transition: all 500ms ease 0s
+  width: 100%
+  text-transform: capitalize
+  outline: none
+  &:focus
+    border: .1rem  solid #fdc716
+
+input.select2-search__field
+  font-family: "Eurosile Bold Condensed",Helvetica,Arial,sans-serif;
+  border: .1rem solid #eaeaea
+  color: #9e9e9e
+  display: block
+  transition: all 500ms ease 0s
+  width: 100%
+  text-transform: capitalize
+  outline: none
+  &:focus,
+  &:active
+    border: .1rem solid #fdc716
+
+li.select2-results__option--highlighted
+  background-color: #fdc716 !important
+
+.select
+  & + .select2
+    transition: all 500ms ease 0s
+    width: 100% !important
+    text-transform: capitalize
+    & .select2-selection__rendered
+      color: #9e9e9e
+      padding: 1rem 0
+    & .select2-selection
+      border: .1rem solid #eaeaea
+      color: #9e9e9e
+      display: block
+      height: 5rem
+      padding: 0 1.5rem
+      transition: all 500ms ease 0s
+      width: 100%
+      text-transform: capitalize
+      outline: none
+    & .select2-selection__arrow
+      top: 1.2rem
+
 .main
   &__gallery
     & > .container

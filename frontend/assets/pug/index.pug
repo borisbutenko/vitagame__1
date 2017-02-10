@@ -2,6 +2,33 @@ extends base
 block main
 	section.section.main__slider
 		include __blocks/slider__main
+	section.section.main__about
+		.container
+			.row
+				.col-md-6.col-sm-6.col-xs-12
+					h2.h2.main__h2 About us
+					p.main__about__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				.col-md-6.col-sm-6.col-xs-12
+					h2.h2.main__h2 Search filter
+					form.form__search
+						.row
+							.col-md-12
+								.row
+									.col-md-6
+										input.input(type='text' name='name' placeholder='Your Name*')
+									.col-md-6
+										input.input(type='text' name='name' placeholder='Email Address*')
+									.col-md-6
+										input.input(type='text' name='name' placeholder='Phone Num')
+									.col-md-6
+										select.select.select__search
+											option Solution One
+											option Solution Two
+											option Solution Three
+									.col-md-12
+										textarea.textarea(name='message' placeholder='Write Your Needs...')
+									.col-md-12
+										button.button.button-yellow(type='button') search
 	section.section.main__gallery
 		.container
 			.row

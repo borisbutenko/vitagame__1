@@ -27,6 +27,11 @@
             autoplay            : 6000
         });
 
+        /**
+         * Init select2 for search form
+         */
+        $(".select__search").select2({ placeholder: 'Select a solution' });
+
     });
 
 })(jQuery);

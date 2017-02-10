@@ -4,6 +4,31 @@
   border-bottom: none
   &__list
     width: 100%
+    &-dropdown
+      position: absolute
+      left: 0
+      top: 6.6rem
+      width: 27rem
+      z-index: 100
+      background: #ddd
+      visibility: hidden
+      opacity: 0
+      transition: all 500ms ease
+      & > .menu-main__link-dropdown
+        display: none !important
+      & > .menu-main__link
+        background: #fff
+        color: #292929
+        display: block
+        font-weight: 600
+        line-height: 2rem
+        padding: 1.5rem 1.5rem 1.5rem 2.3rem
+        position: relative
+        text-transform: capitalize
+        transition: all 500ms ease 0s
+        &:hover
+          color: #fff
+          background-color: #fdc716
   &__logo
     width: 20rem
     margin-right: 1.5rem
@@ -40,6 +65,9 @@
       -webkit-transform: rotate(0deg)
       transform: rotate(0deg)
       transition: all 500ms ease
+    &-dropdown:hover .menu-main__list-dropdown
+      opacity: 1
+      visibility: visible
   &__link
     background: #292929
     color: #fff

@@ -1,4 +1,4 @@
-- var menu = [{name : 'home', url : '#0', sub: null}, {name : 'about us', url : '#0', sub: null}, {name : 'services', url : '#0', sub: null}, {name : 'products', url : '#0', sub: [{name : 'oil filter', url : '#0', sub: null}, {name : 'fuel filter', url : '#0', sub: null}, {name : 'air filter', url : '#0', sub: null}]}, {name : 'filter search', url : '#0', sub: null}, {name : 'contacts', url : '#0', sub: null}]
+- var menu = [{name : 'home', url : '#0', sub: null}, {name : 'about us', url : '#0', sub: null}, {name : 'services', url : '#0', sub: null}, {name : 'products', url : '#0', sub: [{name : 'oil filter', url : '#0'}, {name : 'fuel filter', url : '#0'}, {name : 'air filter', url : '#0'}]}, {name : 'filter search', url : '#0', sub: null}, {name : 'contacts', url : '#0', sub: null}]
 
 nav.navbar.navbar-default.navbar-fixed-top.menu-main
   .container
@@ -15,10 +15,9 @@ nav.navbar.navbar-default.navbar-fixed-top.menu-main
               li.menu-main__item
                 a.menu-main__link(href=item.url)= item.name
             else
-              li.dropdown.menu-main__item.menu-main__item-dropdown
-                a.menu-main__link.menu-main__link-dropdown.dropdown-toggle(href=item.url data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')= item.name
-                  ul.dropdown-menu.menu-main__list-sub
+              li.menu-main__item.menu-main__item-dropdown
+                a.menu-main__link.menu-main__link-dropdown(href=item.url)= item.name
+                  ul.menu-main__list-dropdown
                     each sub in item.sub
-                      li.menu-main__item-sub
-                        a.menu-main__link.menu-main__link-sub(href=sub.url)= sub.name
+                      a.menu-main__link.menu-main__link-sub(href=sub.url)= sub.name
           img.menu-main__logo(src='assets/img/logo.png' alt='')
