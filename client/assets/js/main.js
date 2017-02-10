@@ -32,6 +32,22 @@
          */
         $(".select__search").select2({ placeholder: 'Select a solution' });
 
+        /**
+         *  Scroll to top button
+         */
+        (function() {
+            var btn$ = $('.scroll-to-top');
+
+            btn$.on('click', function() {
+                $('html, body').animate( { scrollTop: 0 }, 1000);
+            });
+
+            window.onscroll = function() {
+
+                if ( $('body').scrollTop() > 200 ) btn$.addClass('scroll-to-top-show');
+                else btn$.removeClass('scroll-to-top-show');
+            };
+        })();
     });
 
 })(jQuery);

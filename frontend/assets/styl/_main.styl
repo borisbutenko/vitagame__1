@@ -129,3 +129,33 @@ li.select2-results__option--highlighted
     border: .2rem solid #fdc716
   &-gray
     border: .2rem solid #d1cece
+
+.scroll-to-top
+  position: fixed
+  bottom: 3rem
+  background: #fdc716
+  font-size: 3.5rem
+  font-weight: normal
+  text-align: center
+  width: 5rem
+  height: 5rem
+  line-height: 4.4rem
+  color: #fff
+  cursor: pointer
+  z-index: 99999
+  border-radius: 50%
+  border: .3rem solid #fdc716
+  transition: all 500ms ease
+  &:hover
+    border: .3rem solid #fdc716
+    color: #fff
+    background: #01305e
+  &-hide
+    opacity: 0
+    right: -5rem
+  &-show
+    opacity: 1
+    right: 1.5rem
+  &__icon
+    position: relative
+    top: -.3rem

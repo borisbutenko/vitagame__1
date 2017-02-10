@@ -3,7 +3,7 @@
 nav.navbar.navbar-default.navbar-fixed-top.menu-main
   .container
     .row
-      .navbar-header
+      .navbar-header.menu-main__navbar-header
         button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#menu-main' aria-expanded='false')
           span.icon-bar
           span.icon-bar
@@ -20,4 +20,5 @@ nav.navbar.navbar-default.navbar-fixed-top.menu-main
                   ul.menu-main__list-dropdown
                     each sub in item.sub
                       a.menu-main__link.menu-main__link-sub(href=sub.url)= sub.name
-          img.menu-main__logo(src='assets/img/logo.png' alt='')
+          a(href='index.html').menu-main__logo
+            img(src='assets/img/logo.png' alt='')

@@ -6,7 +6,6 @@
     width: 100%
     &-dropdown
       position: absolute
-      left: 0
       top: 6.6rem
       width: 27rem
       z-index: 100
@@ -29,7 +28,7 @@
         &:hover
           color: #fff
           background-color: #fdc716
-  &__logo
+  &__logo > img
     width: 20rem
     margin-right: 1.5rem
     padding-top: .6rem
@@ -88,6 +87,10 @@
       width: .2rem
       height: 100%
       background: url('../img/menu-border.png') center center no-repeat
+    &-sub
+      &::before
+        right: 0
+        width: 0
     &-dropdown
       &::after
         font-family: 'FontAwesome'
