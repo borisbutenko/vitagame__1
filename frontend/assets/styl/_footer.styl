@@ -8,12 +8,13 @@ body
 .main
   min-height: 100%
   /* equal to footer height */
-  margin-bottom: -47.1rem
+  //margin-bottom: -47.1rem
   &::after
     content: ""
     display: block
 
 .footer
+  margin-top: 5rem
   height: 47.1rem
 
 .section__footer-top
@@ -21,6 +22,7 @@ body
   padding: 5rem 0
 
 .footer__widget
+  min-height: 30rem
   &__title
     position: relative
     margin-bottom: 4rem
@@ -63,7 +65,7 @@ body
 
 .contacts
   &__item
-    height: 5rem
+    min-height: 5rem
     margin-right: 1rem
   &__icon
     float: left
@@ -74,6 +76,7 @@ body
   &__content
     color: #9e9e9e
     line-height: 2.2rem
+    padding-left: 4rem
     & > span
       color: #fff
       font-weight: 600

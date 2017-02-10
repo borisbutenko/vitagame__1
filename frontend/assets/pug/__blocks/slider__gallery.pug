@@ -1,0 +1,10 @@
+- var slides  = [{url : '#0', src : 'assets/img/slider__gallery/1.jpg', alt : '', style : 'background-image:url(assets/img/slider__gallery/1.jpg)'}, {url : '#0', src : 'assets/img/slider__gallery/2.jpg', alt : '', style : 'background-image:url(assets/img/slider__gallery/2.jpg)'}, {url : '#0', src : 'assets/img/slider__gallery/3.jpg', alt : '', style : 'background-image:url(assets/img/slider__gallery/3.jpg)'}, {url : '#0', src : 'assets/img/slider__gallery/1.jpg', alt : '', style : 'background-image:url(assets/img/slider__gallery/1.jpg)'}, {url : '#0', src : 'assets/img/slider__gallery/2.jpg', alt : '', style : 'background-image:url(assets/img/slider__gallery/2.jpg)'}, {url : '#0', src : 'assets/img/slider__gallery/3.jpg', alt : '', style : 'background-image:url(assets/img/slider__gallery/3.jpg)'}]
+
+.swiper-container.slider-gallery
+	.swiper-wrapper.slider-gallery__wrapper
+		each slide in slides
+			.swiper-slide.slider-gallery__slide
+				.slider-gallery__img(style=slide.style)
+					.slider-gallery__container
+						.slider-gallery__box
+						a.button.button-yellow.slider-gallery__button(href='#0') read more

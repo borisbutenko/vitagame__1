@@ -1,0 +1,15 @@
+- var slides  = [{title : 'Slide 1', desc : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', url : '#0', src : 'assets/img/slider__main/1.jpg', alt : '', style : 'background-image:url(assets/img/slider__main/1.jpg)'}, {title : 'Slide 2', desc : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.', url : '#0', src : 'assets/img/slider__main/2.jpg', alt : '', style : 'background-image:url(assets/img/slider__main/2.jpg)'}, {title : 'Slide 3', desc : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', url : '#0', src : 'assets/img/slider__main/3.jpg', alt : '', style : 'background-image:url(assets/img/slider__main/3.jpg)'}]
+
+.swiper-container.slider-main
+	.swiper-wrapper.slider-main__wrapper
+		each slide in slides
+			.swiper-slide.slider-main__slide
+				.slider-main__img(style=slide.style)
+					.slider-main__container
+						h2.slider-main__title= slide.title
+						p.slider-main__desc= slide.desc
+						a.button.button-yellow.slider-main__button(href='#0') read more
+						a.button.button-gray.slider-main__button(href='#0') our solutions
+	.swiper-pagination.slider-main__pagination
+	.swiper-button-prev.slider-main__prev
+	.swiper-button-next.slider-main__next

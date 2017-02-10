@@ -170,6 +170,7 @@ gulp.task('scripts', () => {
         .pipe(concat('main.js'))
         .pipe(gulp.dest(scriptsPath.to))
         .pipe(rename({suffix: '.min'}))
+        .pipe(uglify())
         .pipe(gulp.dest(scriptsPath.to))
         .pipe(notify({ message: 'Scripts task complete' }));
 });

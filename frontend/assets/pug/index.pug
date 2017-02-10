@@ -1,2 +1,31 @@
 extends base
 block main
+	section.section.main__slider
+		include __blocks/slider__main
+	section.section.main__gallery
+		.container
+			.row
+				.col-md-12.col-sm-12.col-xs-12
+					h2.h2.main__h2 photo gallery
+					include __blocks/slider__gallery
+	section.section.main__choose
+		.container
+			.row
+				.col-md-4.col-sm-4.col-xs-12
+					.choose
+						span.choose__icon.flaticon-avatar
+						h3.choose__title WE ARE PROFESSIONAL
+						h5.choose__sub-title Engineers
+						p.choose__desc How all this mistakens idea of denouncing pleasures and completed account.
+				.col-md-4.col-sm-4.col-xs-12
+					.choose
+						span.choose__icon.flaticon-interface-2
+						h3.choose__title WE ARE TRUSTED
+						h5.choose__sub-title Team Members
+						p.choose__desc Idea denouncing pleasures and praisings pain was born great explorer.
+				.col-md-4.col-sm-4.col-xs-12
+					.choose
+						span.choose__icon.flaticon-tool-1
+						h3.choose__title WE ARE EXPERT
+						h5.choose__sub-title Designer
+						p.choose__desc Denouncing pleasures and was born work will give you a complete masters.
