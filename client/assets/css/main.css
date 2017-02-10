@@ -10225,6 +10225,11 @@ ul {
 .input:focus {
   border: 0.1rem solid #fdc716;
 }
+.input:focus + .button-search {
+  background: #01305e none repeat scroll 0 0;
+  color: #fff;
+  border: 0.1rem solid #01305e;
+}
 .textarea {
   font-family: "Eurosile Bold Condensed", Helvetica, Arial, sans-serif;
   height: 11rem;
@@ -10340,6 +10345,22 @@ li.select2-results__option--highlighted {
 }
 .button-gray {
   border: 0.2rem solid #d1cece;
+}
+.button-search {
+  background: #353535 none repeat scroll 0 0;
+  border: 0.1rem solid #353535;
+  color: #fff;
+  font-size: 1.3rem;
+  height: 5rem;
+  line-height: 5rem;
+  outline: medium none;
+  padding: 0;
+  position: absolute;
+  right: 1.5rem;
+  text-align: center;
+  top: 0;
+  transition: all 500ms ease;
+  width: 4.5rem;
 }
 .scroll-to-top {
   position: fixed;
@@ -10771,9 +10792,6 @@ body {
 .menu-footer__link:hover {
   color: #fdc716;
 }
-.section__search {
-  padding-top: 5rem;
-}
 .main__search {
   margin-bottom: 3rem;
 }
@@ -10784,15 +10802,35 @@ body {
   text-transform: uppercase;
   font-size: 1.8rem;
 }
-.main__search-table th {
-  border: none !important;
+.table-search tr {
+  cursor: pointer;
+  transition: all 0.5s;
 }
-.main__search-table td {
-  font-size: 2rem;
-  width: 33.3333333%;
-  vertical-align: middle !important;
+.table-search tr:hover {
+  background-color: rgba(253,199,22,0.5);
+}
+.table-search td {
+  width: calc(100% / 7);
+  text-align: left;
+}
+.table-search__brand,
+.table-search__name {
+  text-transform: capitalize;
+}
+.table-search__price {
+  text-transform: uppercase;
+}
+.pagination__nav {
   text-align: center;
-  border: none !important;
+}
+.pagination > li > a {
+  color: #333;
+}
+.pagination > li.active > a,
+.pagination > li.active > a:focus,
+.pagination > li.active > a:hover {
+  background-color: #fdc716;
+  border-color: #fdc716;
 }
 @media (max-width: 992px) {
   .menu-main__logo {

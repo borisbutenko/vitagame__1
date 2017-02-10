@@ -1,14 +1,16 @@
-table.table.main__search-table
+- var n = 0
+
+table.table.table-search
 	thead
-		th depurox number
+		th(colspan=6) Search results
 	tbody
-		tr
-			td(rowspan='2')
-				img.main__search-img(src='assets/img/slider__gallery/1.jpg' alt='')
-			td
-				.main__search-dimension dimension
-			td(rowspan='2')
-				.main__search-app application
-		tr
-			td
-				.main__search-cross cross ref.
+		while n < 50
+			tr
+				td= n++
+				td.table-search__icon
+					i.fa.fa-car
+				td.table-search__brand brand
+				td.table-search__name name
+				td.table-search__code 13711
+				td.table-search__price 50 usd
+				td.table-search__year 04/16

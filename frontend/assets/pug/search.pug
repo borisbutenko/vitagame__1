@@ -3,18 +3,30 @@ block main
 	section.section.section__search
 		.main__search
 			.container
-				.row
-					.col-md-12.col-sm-12.col-xs-12
-						select.select.select__search-page
+				.col-md-6.col-sm-6.col-xs-12
+					h2.h2.main__h2 Filter search
+			form.form__search
+				.container
+					.row
+						.col-md-12.col-sm-12.col-xs-12
+							input.input(type='text' name='name' placeholder='search catalog')
+							button(type='submit').button-search
+								i.fa.fa-search
+						.col-md-4.col-sm-4.col-xs-12
+							input.input(type='text' name='name' placeholder='depurox number')
+							button(type='submit').button-search
+								i.fa.fa-search
+						.col-md-4.col-sm-4.col-xs-12
+							input.input(type='text' name='name' placeholder='products')
+							button(type='submit').button-search
+								i.fa.fa-search
+						.col-md-4.col-sm-4.col-xs-12
+							input.input(type='text' name='name' placeholder='cross reference')
+							button(type='submit').button-search
+								i.fa.fa-search
+						.col-md-4.col-sm-4.col-xs-12
+							button.button.button-yellow(type='submit') search
 		.main__search-result
 			.container
 				.row
-					hr
 					include __blocks/search-result
-					hr
-					include __blocks/search-result
-					hr
-					include __blocks/search-result
-					hr
-					include __blocks/search-result
-					hr

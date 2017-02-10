@@ -28,10 +28,26 @@
         });
 
         /**
-         * Init select2 for search form and page
+         *  Pagination for table-search
          */
-        $(".select__search-form").select2({ placeholder: 'Select a solution' });
-        $(".select__search-page").select2({ placeholder: 'Search catalog...' });
+        $('.table-search').paginate({
+            previous: false,
+            next: false,
+            first: false,
+            last: false,
+            navigationClass : 'table-search__navigation',
+            limit           : 10
+        });
+
+        $('[data-page]').on('click', function() {
+            $('[data-page]').each(function() {
+                $(this).parent().removeClass('active');
+            });
+
+            $(this).parent().addClass('active');
+        });
+
+        $('.pagination > li:first-child').addClass('active');
 
         /**
          *  Scroll to top button

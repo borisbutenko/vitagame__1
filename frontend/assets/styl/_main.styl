@@ -24,6 +24,10 @@ ul
   outline: none
   &:focus
     border: .1rem solid #fdc716
+    & + .button-search
+      background: #01305e none repeat scroll 0 0
+      color: #fff
+      border: .1rem solid #01305e
 
 .textarea
   font-family: "Eurosile Bold Condensed",Helvetica,Arial,sans-serif
@@ -129,6 +133,21 @@ li.select2-results__option--highlighted
     border: .2rem solid #fdc716
   &-gray
     border: .2rem solid #d1cece
+  &-search
+    background: #353535 none repeat scroll 0 0
+    border: .1rem solid #353535
+    color: #fff
+    font-size: 1.3rem
+    height: 5rem
+    line-height: 5rem
+    outline: medium none
+    padding: 0
+    position: absolute
+    right: 1.5rem
+    text-align: center
+    top: 0
+    transition: all 500ms ease
+    width: 4.5rem
 
 .scroll-to-top
   position: fixed
