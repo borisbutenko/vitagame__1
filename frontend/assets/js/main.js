@@ -28,9 +28,10 @@
         });
 
         /**
-         * Init select2 for search form
+         * Init select2 for search form and page
          */
-        $(".select__search").select2({ placeholder: 'Select a solution' });
+        $(".select__search-form").select2({ placeholder: 'Select a solution' });
+        $(".select__search-page").select2({ placeholder: 'Search catalog...' });
 
         /**
          *  Scroll to top button

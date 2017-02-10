@@ -194,7 +194,7 @@ return gulp.src(fontsPath.from)
  * Compile pug files
  */
 const pugPath = {
-    from : `${dirs.from}pug/index.pug`,
+    from : [`${dirs.from}pug/index.pug`, `${dirs.from}pug/search.pug`],
     to   : `../client/`,
     watch: `${dirs.from}pug/**/*`
 };
@@ -207,9 +207,9 @@ return gulp.src(pugPath.from)
         basedir: '../',
         pretty: true
     }))
-    // .pipe(htmlmin({
-    //     collapseWhitespace: true
-    // }))
+    .pipe(htmlmin({
+        collapseWhitespace: true
+    }))
     .pipe(gulp.dest(pugPath.to))
     .pipe(notify({ message: 'Pug task complete' }));
 });
