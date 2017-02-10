@@ -28,6 +28,11 @@
         });
 
         /**
+         *  Select2
+         */
+        $('select').select2();
+
+        /**
          *  Pagination for table-search
          */
         $('.table-search').paginate({
