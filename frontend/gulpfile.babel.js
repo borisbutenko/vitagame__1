@@ -207,9 +207,11 @@ return gulp.src(pugPath.from)
         basedir: '../',
         pretty: true
     }))
+    /*
     .pipe(htmlmin({
         collapseWhitespace: true
     }))
+    */
     .pipe(gulp.dest(pugPath.to))
     .pipe(notify({ message: 'Pug task complete' }));
 });
