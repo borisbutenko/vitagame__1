@@ -23,7 +23,7 @@
             slidesPerView       : 4,
             paginationClickable : true,
             loop                : true,
-            spaceBetween: 30,
+            spaceBetween        : 30,
             autoplay            : 6000
         });
 
@@ -127,6 +127,74 @@
 
             map.setOptions({styles: styles});
         }());
+
+        /**
+         *  TouchSpin
+         */
+        (function() {
+
+            $('input[name=cart-touchspin]').TouchSpin({});
+
+            $('.bootstrap-touchspin-down')
+                .text('')
+                .append(
+                    $('<i>', {
+                        class : 'fa fa-arrow-down'
+                    })
+                );
+
+            $('.bootstrap-touchspin-up')
+                .text('')
+                .append(
+                    $('<i>', {
+                        class : 'fa fa-arrow-up'
+                    })
+                );
+
+        })();
+
+        /**
+         *  Flexslider
+         */
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: "thumbnails"
+        });
+
+        /**
+         *  EasyZoom
+         */
+        $('.easyzoom').easyZoom();
+
+        /**
+         *  PriceFilter
+         */
+        (function() {
+
+            if($('.range-slider-price').length){
+
+                var priceRange = document.getElementById('range-slider-price');
+
+                noUiSlider.create(priceRange, {
+                    start: [ 60, 100 ],
+                    limit: 200,
+                    behaviour: 'drag',
+                    connect: true,
+                    range: {
+                        'min': 30,
+                        'max': 200
+                    }
+                });
+
+                var limitFieldMin = document.getElementById('min-value-rangeslider');
+                var limitFieldMax = document.getElementById('max-value-rangeslider');
+
+                priceRange.noUiSlider.on('update', function( values, handle ){
+                    (handle ? limitFieldMax : limitFieldMin).value = values[handle];
+                });
+            };
+
+        })();
     });
 
 })(jQuery);

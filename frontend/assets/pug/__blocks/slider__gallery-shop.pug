@@ -1,0 +1,21 @@
+- var slides  = [{url : '#0', src : 'assets/img/slider__gallery-shop/2.jpg', alt : '', style : 'background-image:url(assets/img/slider__gallery-shop/2.jpg)'}, {url : '#0', src : 'assets/img/slider__gallery/2.jpg', alt : '', style : 'background-image:url(assets/img/slider__gallery-shop/2.jpg)'}, {url : '#0', src : 'assets/img/slider__gallery-shop/2.jpg', alt : '', style : 'background-image:url(assets/img/slider__gallery-shop/2.jpg)'}, {url : '#0', src : 'assets/img/slider__gallery-shop/2.jpg', alt : '', style : 'background-image:url(assets/img/slider__gallery-shop/2.jpg)'}, {url : '#0', src : 'assets/img/slider__gallery-shop/2.jpg', alt : '', style : 'background-image:url(assets/img/slider__gallery-shop/2.jpg)'}, {url : '#0', src : 'assets/img/slider__gallery-shop/2.jpg', alt : '', style : 'background-image:url(assets/img/slider__gallery-shop/2.jpg)'}]
+
+.swiper-container.slider-gallery
+	.swiper-wrapper.slider-gallery__wrapper
+		each slide in slides
+			.swiper-slide.slider-gallery__slide
+				a(href='assets/img/slider__main/2.jpg' data-lightbox='gallery' data-title='Large image')
+					.slider-gallery__img(style=slide.style)
+						.slider-gallery__container
+							.slider-gallery__box
+								i.fa.fa-eye
+				.title
+					h3 Start From The Art
+					p
+						span
+							i.fa.fa-usd
+							| 49.00
+						del
+							i.fa.fa-usd
+							| 69.00
+					a(href='#0') Add to Cart

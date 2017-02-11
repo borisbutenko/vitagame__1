@@ -28,6 +28,19 @@ ul
       background: #01305e none repeat scroll 0 0
       color: #fff
       border: .1rem solid #01305e
+  &-touchspin
+    background-color: #fff
+    background-image: none
+    border: .1rem solid #eaeaea
+    border-radius: 0 !important
+    box-shadow: none
+    color: #272727
+    font-size: 1.8rem
+    font-weight: 500
+    height: 5rem
+    padding: .6rem 0 .8rem
+    text-align: center
+    width: 8rem !important
 
 .textarea
   font-family: "Eurosile Bold Condensed",Helvetica,Arial,sans-serif
@@ -115,14 +128,15 @@ li.select2-results__option--highlighted
       font-size: 4.5rem
 
 .button
+  width: 100%
   cursor: pointer
-  padding: 1.3rem 3rem
+  padding: 1.3rem 0
+  text-align: center
   margin-right: 1.5rem
   color: #fff
   display: inline-block
   font-weight: 600
   outline: medium none
-  text-align: center
   text-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.2);
   text-transform: uppercase
   transition: all 500ms ease
@@ -132,10 +146,13 @@ li.select2-results__option--highlighted
     background: #fdc716
     border: .2rem solid #fdc716
   &-gray
+    color: #333
     border: .2rem solid #d1cece
+    &:hover
+      color: #fff
   &-search
-    background: #353535 none repeat scroll 0 0
-    border: .1rem solid #353535
+    background: #fdc716 none repeat scroll 0 0
+    border: medium none
     color: #fff
     font-size: 1.3rem
     height: 5rem
@@ -148,6 +165,9 @@ li.select2-results__option--highlighted
     top: 0
     transition: all 500ms ease
     width: 4.5rem
+    &:hover
+      background: #292929 none repeat scroll 0 0
+      color: #fff
 
 .scroll-to-top
   position: fixed

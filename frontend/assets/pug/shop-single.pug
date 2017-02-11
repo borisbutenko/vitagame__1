@@ -1,0 +1,244 @@
+extends base
+mixin items(i, heading)
+	- i = 'product-' + i
+	- heading = 'heading' + heading
+	.collapse(id=i role='tabpanel' aria-labelledby=heading)
+		ul.categories__items-list
+			li
+				a(href='#0') item-1
+			li
+				a(href='#0') item-2
+			li
+				a(href='#0') item-3
+			li
+				a(href='#0') item-4
+			li
+				a(href='#0') item-5
+
+mixin stars(num)
+	- var i = 0
+	while i < num
+		i.fa.fa-star
+		- i++
+
+block main
+	section.section.main__shop-single
+		.container
+			.row
+				.col-md-6.col-sm-6.col-xs-12
+					h2.h2.main__h2 Shop single
+				.col-lg-9.col-md-8.col-sm-12.col-xs-12.pull-right
+					.product-content-box
+						.row
+							.col-md-6.img-box
+								.flexslider
+									.flex-viewport
+										ul.slides
+											- var n = 0
+											while n < 4
+												li.clone(data-thumb='assets/img/slider__gallery-shop/2.jpg' aria-hidden='true')
+													.thumb-image.easyzoom
+														a(href='assets/img/slider__gallery-shop/2.jpg')
+															img.img-responsive(src='assets/img/slider__gallery-shop/2.jpg' alt='' data-zoom-image='assets/img/slider__gallery-shop/2.jpg' draggable='false')
+												- n++
+							.col-md-6
+								.content-box
+									.col-md-12.col-sm-12.col-xs-12
+										h2 Start From The Art
+										.review-box
+											ul
+												- var n = 0
+												while n < 5
+													li
+														i.fa.fa-star
+													- n++
+											span (2 Reviews)
+										span.price $200.99
+									.col-md-12.col-sm-12.col-xs-12
+										.text
+											p Working from home meant we couldsnack and coffee our breaks change our desks or view, good, drink on the job, even spend the day in pajamas consequences that are extremely.
+										.location-box
+											p Check Delivery Option at Your Location:
+									form
+										.col-md-6.col-sm-6.col-xs-12
+											input.input(type='text' name='name' placeholder='Pincode')
+										.col-md-6.col-sm-6.col-xs-12
+											button.button.button-gray(type='submit') Check
+									.col-md-12.col-sm-12.col-xs-12
+										span.delivery-info Expected Delivery in 4-10 Days
+									.addto-cart-box
+										.col-md-6.col-sm-6.col-xs-6
+											.input-group.bootstrap-touchspin
+												input#cart-touchspin.input.quantity-spinner.form-control.input-touchspin(type='text' name='cart-touchspin' value='2')
+										.col-md-6.col-sm-6.col-xs-6
+											button.button.button-yellow(type='button') Add to Cart
+					.product-tab-box
+						ul.nav.nav-tabs.tab-menu
+							li.active
+								a(href='#details' data-toggle='tab' aria-expanded='true') Item Details
+							li
+								a(href='#review' data-toggle='tab' aria-expanded='false') Reviews <span>(02)</span>
+							.tab-content
+								#details.tab-pane.active
+									.product-details-content
+										p Easy to install, full paisa wasool  , the package was good without any damage but shipping is late remaing everything is good go for it it is better than other threadmill.
+										ul.highlight
+											li.highlight-title Highlights
+											- var n = 0
+											while n < 9
+												li Item of Highlights
+												- n++
+								#review.tab-pane
+									.review-box
+										.single-review-box
+											.img-holder
+												img(src='assets/img/review-1.jpg' alt='')
+											.text-holder
+												.top
+													.name.pull-left
+														h4 Michel Kong
+													.review-box.pull-left
+														ul
+															- var n = 0
+															while n < 5
+																li
+																	i.fa.fa-star
+																-n++
+													.review-date.pull-right
+														p 18 Hours Ago
+												.text
+													p If your delts are a weakness, or you find it's a muscle group you have seds a hard time connecting with, this workout will help. You'll feel a huge amount of activation in your shoulders.
+													a.reply(href='#0') Reply
+									.review-box
+										.single-review-box
+											.img-holder
+												img(src='assets/img/review-1.jpg' alt='')
+											.text-holder
+												.top
+													.name.pull-left
+														h4 Michel Kong
+													.review-box.pull-left
+														ul
+															- var n = 0
+															while n < 5
+																li
+																	i.fa.fa-star
+																-n++
+													.review-date.pull-right
+														p 18 Hours Ago
+												.text
+													p If your delts are a weakness, or you find it's a muscle group you have seds a hard time connecting with, this workout will help. You'll feel a huge amount of activation in your shoulders.
+													a.reply(href='#0') Reply
+									.review-form
+										.sec-title-two
+											h2 Add Your Review
+											hr
+										.add-rating-box
+											.add-rating-title
+												h4 Your Rating
+											ul
+												- var n = 1
+												while n < 6
+													li
+														+stars(n)
+													- n++
+										form
+											.row
+												.col-md-6
+													input.input(type='text' name='name' placeholder='Your name*')
+												.col-md-6
+													input.input(type='text' name='email' placeholder='Email Address*')
+												.col-md-6
+													input.input(type='text' name='phnumber' placeholder='Phone Num')
+												.col-md-6
+													input.input(type='text' name='website	' placeholder='Website')
+												.col-md-12
+													textarea.textarea(name='message' placeholder='Write Your Needs...')
+												.col-md-12
+													button.button.button-yellow(type='submit') Submit Now
+					.related-product
+						.sec-title-two
+							h2 Related Products
+							hr
+						.row
+							.col-md-12
+								include __blocks/slider__gallery-shop
+				.col-lg-3.col-md-4.col-sm-7.col-xs-12.pull-left
+					aside.sidebar-wrapper
+						.single-sidebar
+							form.form__search
+								input.input(type='text' name='name' placeholder='Search')
+								button.button-search(type='submit')
+									i.fa.fa-search(aria-hidden='true')
+						.single-sidebar
+							h2.sidebar-title categories
+							hr
+							ul#categories.categories.clearfix(role='tablist' aria-multiselectable='true')
+								li
+									a(href='#product-1' data-parent='#categories' role='button' data-toggle='collapse' aria-expanded='false' aria-controls='collapseOne')
+										i.fa.fa-angle-right(aria-hidden='true')
+										| Manufacturing
+										span (5)
+									+items(1, 'One')
+								li
+									a(href='#product-2' data-parent='#categories' role='button' data-toggle='collapse' aria-expanded='false' aria-controls='collapseTwo')
+										i.fa.fa-angle-right(aria-hidden='true')
+										| Agriculture
+										span (5)
+									+items(2, 'Two')
+								li
+									a(href='#product-3' data-parent='#categories' role='button' data-toggle='collapse' aria-expanded='false' aria-controls='collapseThree')
+										i.fa.fa-angle-right(aria-hidden='true')
+										| Pharmacology
+										span (5)
+									+items(3, 'Three')
+								li
+									a(href='#product-4' data-parent='#categories' role='button' data-toggle='collapse' aria-expanded='false' aria-controls='collapseFour')
+										i.fa.fa-angle-right(aria-hidden='true')
+										| Latest Technology
+										span (5)
+									+items(4, 'Four')
+						.single-sidebar
+							.sidebar-title FILTER BY PRICE
+							hr
+							#range-slider-price.range-slider-price
+							.form-group.clearfix
+								p
+									|	price: $
+									input#min-value-rangeslider.val-box(type='text' readonly)
+									| -$
+									input#max-value-rangeslider.val-box(type='text' readonly)
+								button.button.button-yellow(type='button') Filter
+						.single-sidebar
+							.sidebar-title Latest Products
+							hr
+							ul.latest-product
+								- var n = 0
+								while n < 3
+									li
+										.img-holder
+											img(src='assets/img/instagram/instagram-2.jpg' alt=n++)
+											.overlay-box
+												.box
+													.content
+														a(href='#0')
+															i.fa.fa-link
+										.title
+											h3
+												a(href='#0') Start From The Art
+											p
+												span
+													i.fa.fa-usd
+													| 50.55
+												del
+													i.fa.fa-usd
+													| 80.88
+						.single-sidebar
+							.sidebar-title PRODUCT TAG
+							hr
+							ul.product-tag
+								- var n = 0
+								while n < 10
+									- var tag = 'tag-' + n++;
+									li
+										a(href='#0')= tag
