@@ -194,7 +194,7 @@ return gulp.src(fontsPath.from)
  * Compile pug files
  */
 const pugPath = {
-    from : [`${dirs.from}pug/index.pug`, `${dirs.from}pug/search.pug`],
+    from : [`${dirs.from}pug/index.pug`, `${dirs.from}pug/search.pug`, `${dirs.from}pug/contacts.pug`],
     to   : `../client/`,
     watch: `${dirs.from}pug/**/*`
 };

@@ -1,0 +1,53 @@
+extends base
+block main
+	section.section.section__contacts
+		.main__contacts.contacts
+			.container
+				.row
+					.col-md-6.col-sm-6.col-xs-12
+						h2.h2.main__h2 Contacts
+				.row
+					.col-md-4.col-sm-7.col-xs-12
+						.office
+							ul.office__list
+								li.office__item
+									.office__address
+										.icon-holder
+											span.flaticon-signs
+										.content-holder
+											p <span>Address:</span> 20c Factory Street, Newyork, NY 10205
+								li.office__item
+									.office__phone
+										.icon-holder
+											span.flaticon-email-envelope-back-symbol-on-phone-screen
+										.content-holder
+											p <span>CALL US:</span> +(321) 48 659 779 Mail@Industrypress.com
+								li.office__item
+									.office__timework
+										.icon-holder
+											span.flaticon-clock-1
+										.content-holder
+											p <span>Mon - Sat Day:</span> 10.00 - 18.00<br><span>Sunday:</span> Closed
+					.col-md-offset-1.col-md-7.col-sm-12.col-xs-12
+						form.form__contacts
+							.row
+								.col-md-12
+									.row
+										.col-md-6
+											input.input(type='text' name='name' placeholder='Your Name*')
+										.col-md-6
+											input.input(type='text' name='name' placeholder='Email Address*')
+										.col-md-6
+											input.input(type='text' name='name' placeholder='Phone Num')
+										.col-md-6
+											select.select.select__search-form
+												option Solution One
+												option Solution Two
+												option Solution Three
+										.col-md-12
+											textarea.textarea(name='message' placeholder='Write Your Needs...')
+										.col-md-12
+											button.button.button-yellow(type='submit') send
+	section.section.section__map
+		.main__google-map
+			include __blocks/google__map

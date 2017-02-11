@@ -1,0 +1,28 @@
+#modal-search.modal.fade(tabindex='-1' role='dialog' aria-labelledby='form-search')
+	.modal-dialog(role='document')
+		.modal-content
+			form.form__search
+				.modal-header
+					button.close(type='button' data-dismiss='modal' aria-label='Close')
+						span(aria-hidden='true') &times;
+					h4.modal-title Search form
+				.modal-body
+					.row
+						.col-md-12
+							.row
+								.col-md-6
+									input.input(type='text' name='name' placeholder='Your Name*')
+								.col-md-6
+									input.input(type='text' name='name' placeholder='Email Address*')
+								.col-md-6
+									input.input(type='text' name='name' placeholder='Phone Num')
+								.col-md-6
+									select.select.select__search-form
+										option Solution One
+										option Solution Two
+										option Solution Three
+								.col-md-12
+									textarea.textarea(name='message' placeholder='Write Your Needs...')
+				.modal-footer
+					button.button.button-gray(type='button' data-dismiss='modal') Cancel
+					button.button.button-yellow(type='submit') Search

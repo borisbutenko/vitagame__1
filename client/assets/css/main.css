@@ -10396,6 +10396,18 @@ li.select2-results__option--highlighted {
   position: relative;
   top: -0.3rem;
 }
+#modal-search.modal {
+  top: 4rem;
+}
+#modal-search.modal .button-gray {
+  background: #808080;
+}
+#modal-search.modal .button-gray:hover {
+  background: #292929;
+}
+select + span.select2 {
+  margin-bottom: 2rem;
+}
 .menu-main {
   background: #292929;
   box-shadow: 0 1.3rem 3rem -1.2rem rgba(0,0,0,0.75);
@@ -10832,8 +10844,42 @@ body {
   background-color: #fdc716;
   border-color: #fdc716;
 }
-.form__search select + span.select2 {
+#contact-google-map {
+  width: 100%;
+  height: 50rem;
+}
+.section__map {
+  margin: 5rem 0 -5rem;
+}
+.office {
   margin-bottom: 2rem;
+}
+.office .office__item {
+  min-height: 5rem;
+  margin-bottom: 1rem;
+}
+.office .office__item > div {
+  display: inline-block;
+}
+.office .office__item .icon-holder {
+  float: left;
+}
+.office .office__item .icon-holder > span::before {
+  color: #fdc716;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.office .office__item .content-holder {
+  padding-left: 5rem;
+  padding-top: 0.5rem;
+}
+.office .office__item .content-holder > p {
+  color: #9e9e9e;
+  line-height: 2.2rem;
+}
+.office .office__item .content-holder > p > span {
+  text-transform: capitalize;
+  color: #333;
 }
 @media (max-width: 992px) {
   .menu-main__logo {

@@ -70,6 +70,63 @@
                 else btn$.removeClass('scroll-to-top-show');
             };
         })();
+
+        /**
+         *  InitMap
+         */
+        (function() {
+            var center = {
+                lat: 40.712784,
+                lng: -74.005941
+            };
+
+            if ( !$('#contact-google-map').length ) return false;
+
+            var map = new google.maps.Map(document.getElementById('contact-google-map'), {
+                zoom: 12,
+                center: center
+            });
+
+            var marker = new google.maps.Marker({
+                position: center,
+                map: map
+            });
+
+            var styles = [
+                {
+                    featureType: "all",
+                    stylers: [
+                        { hue: "#fdc716" },
+                        { saturation: -80 }
+                    ]
+                },
+                {
+                    featureType: "road.arterial",
+                    elementType: "geometry",
+                    stylers: [
+                        { hue: "#00ffee" },
+                        { saturation: 50 }
+                    ]
+                },
+                {
+                    featureType: "water",
+                    stylers: [
+                        {
+                            "color": "#fdc716"
+                        }
+                    ]
+                },
+                {
+                    featureType: "poi.business",
+                    elementType: "labels",
+                    stylers: [
+                        { visibility: "off" }
+                    ]
+                }
+            ];
+
+            map.setOptions({styles: styles});
+        }());
     });
 
 })(jQuery);
