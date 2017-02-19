@@ -46,7 +46,7 @@ block main
 											while n < 4
 												li.clone(data-thumb='assets/img/slider__gallery-shop/2.jpg' aria-hidden='true')
 													.thumb-image.easyzoom
-														a(href='assets/img/slider__gallery-shop/2.jpg')
+														a(href='assets/img/slider__gallery-shop/2.jpg' data-lightbox='gallery' data-title='Large image')
 															img.img-responsive(src='assets/img/slider__gallery-shop/2.jpg' alt='' data-zoom-image='assets/img/slider__gallery-shop/2.jpg' draggable='false')
 												- n++
 							.col-md-4
@@ -68,7 +68,7 @@ block main
 											p Working from home meant we couldsnack and coffee our breaks change our desks or view, good, drink on the job, even spend the day in pajamas consequences that are extremely.
 										//.location-box
 										//	p Check Delivery Option at Your Location:
-									form
+									//form
 									//	.col-md-6.col-sm-6.col-xs-12
 									//		input.input(type='text' name='name' placeholder='Pincode')
 									//	.col-md-6.col-sm-6.col-xs-12
@@ -84,97 +84,97 @@ block main
 							.col-md-4
 								.application
 									h2 Application
-					.product-tab-box
-						ul.nav.nav-tabs.tab-menu
-							li.active
-								a(href='#details' data-toggle='tab' aria-expanded='true') Item Details
-							li
-								a(href='#review' data-toggle='tab' aria-expanded='false') Reviews <span>(02)</span>
-							.tab-content
-								#details.tab-pane.active
-									.product-details-content
-										p Easy to install, full paisa wasool  , the package was good without any damage but shipping is late remaing everything is good go for it it is better than other threadmill.
-										ul.highlight
-											li.highlight-title Highlights
-											- var n = 0
-											while n < 9
-												li Item of Highlights
-												- n++
-								#review.tab-pane
-									.review-box
-										.single-review-box
-											.img-holder
-												img(src='assets/img/review-1.jpg' alt='')
-											.text-holder
-												.top
-													.name.pull-left
-														h4 Michel Kong
-													.review-box.pull-left
-														ul
-															- var n = 0
-															while n < 5
-																li
-																	i.fa.fa-star
-																-n++
-													.review-date.pull-right
-														p 18 Hours Ago
-												.text
-													p If your delts are a weakness, or you find it's a muscle group you have seds a hard time connecting with, this workout will help. You'll feel a huge amount of activation in your shoulders.
-													a.reply(href='#0') Reply
-									.review-box
-										.single-review-box
-											.img-holder
-												img(src='assets/img/review-1.jpg' alt='')
-											.text-holder
-												.top
-													.name.pull-left
-														h4 Michel Kong
-													.review-box.pull-left
-														ul
-															- var n = 0
-															while n < 5
-																li
-																	i.fa.fa-star
-																-n++
-													.review-date.pull-right
-														p 18 Hours Ago
-												.text
-													p If your delts are a weakness, or you find it's a muscle group you have seds a hard time connecting with, this workout will help. You'll feel a huge amount of activation in your shoulders.
-													a.reply(href='#0') Reply
-									.review-form
-										.sec-title-two
-											h2 Add Your Review
-											hr
-										.add-rating-box
-											.add-rating-title
-												h4 Your Rating
-											ul
-												- var n = 1
-												while n < 6
-													li
-														+stars(n)
-													- n++
-										form
-											.row
-												.col-md-6
-													input.input(type='text' name='name' placeholder='Your name*')
-												.col-md-6
-													input.input(type='text' name='email' placeholder='Email Address*')
-												.col-md-6
-													input.input(type='text' name='phnumber' placeholder='Phone Num')
-												.col-md-6
-													input.input(type='text' name='website	' placeholder='Website')
-												.col-md-12
-													textarea.textarea(name='message' placeholder='Write Your Needs...')
-												.col-md-12
-													button.button.button-yellow(type='submit') Submit Now
-					.related-product
-						.sec-title-two
-							h2 Related Products
-							hr
-						.row
-							.col-md-12
-								include __blocks/slider__gallery-shop
+					//.product-tab-box
+					//	ul.nav.nav-tabs.tab-menu
+					//		li.active
+					//			a(href='#details' data-toggle='tab' aria-expanded='true') Item Details
+					//		li
+					//			a(href='#review' data-toggle='tab' aria-expanded='false') Reviews <span>(02)</span>
+					//		.tab-content
+					//			#details.tab-pane.active
+					//				.product-details-content
+					//					p Easy to install, full paisa wasool  , the package was good without any damage but shipping is late remaing everything is good go for it it is better than other threadmill.
+					//					ul.highlight
+					//						li.highlight-title Highlights
+					//						- var n = 0
+					//						while n < 9
+					//							li Item of Highlights
+					//							- n++
+					//			#review.tab-pane
+					//				.review-box
+					//					.single-review-box
+					//						.img-holder
+					//							img(src='assets/img/review-1.jpg' alt='')
+					//						.text-holder
+					//							.top
+					//								.name.pull-left
+					//									h4 Michel Kong
+					//								.review-box.pull-left
+					//									ul
+					//										- var n = 0
+					//										while n < 5
+					//											li
+					//												i.fa.fa-star
+					//											-n++
+					//								.review-date.pull-right
+					//									p 18 Hours Ago
+					//							.text
+					//								p If your delts are a weakness, or you find it's a muscle group you have seds a hard time connecting with, this workout will help. You'll feel a huge amount of activation in your shoulders.
+					//								a.reply(href='#0') Reply
+					//				.review-box
+					//					.single-review-box
+					//						.img-holder
+					//							img(src='assets/img/review-1.jpg' alt='')
+					//						.text-holder
+					//							.top
+					//								.name.pull-left
+					//									h4 Michel Kong
+					//								.review-box.pull-left
+					//									ul
+					//										- var n = 0
+					//										while n < 5
+					//											li
+					//												i.fa.fa-star
+					//											-n++
+					//								.review-date.pull-right
+					//									p 18 Hours Ago
+					//							.text
+					//								p If your delts are a weakness, or you find it's a muscle group you have seds a hard time connecting with, this workout will help. You'll feel a huge amount of activation in your shoulders.
+					//								a.reply(href='#0') Reply
+					//				.review-form
+					//					.sec-title-two
+					//						h2 Add Your Review
+					//						hr
+					//					.add-rating-box
+					//						.add-rating-title
+					//							h4 Your Rating
+					//						ul
+					//							- var n = 1
+					//							while n < 6
+					//								li
+					//									+stars(n)
+					//								- n++
+					//					form
+					//						.row
+					//							.col-md-6
+					//								input.input(type='text' name='name' placeholder='Your name*')
+					//							.col-md-6
+					//								input.input(type='text' name='email' placeholder='Email Address*')
+					//							.col-md-6
+					//								input.input(type='text' name='phnumber' placeholder='Phone Num')
+					//							.col-md-6
+					//								input.input(type='text' name='website	' placeholder='Website')
+					//							.col-md-12
+					//								textarea.textarea(name='message' placeholder='Write Your Needs...')
+					//							.col-md-12
+					//								button.button.button-yellow(type='submit') Submit Now
+					//.related-product
+					//	.sec-title-two
+					//		h2 Related Products
+					//		hr
+					//	.row
+					//		.col-md-12
+					//			include __blocks/slider__gallery-shop
 				//.col-lg-3.col-md-4.col-sm-7.col-xs-12.pull-left
 				//	aside.sidebar-wrapper
 				//		.single-sidebar

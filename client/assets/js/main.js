@@ -164,7 +164,7 @@
         /**
          *  EasyZoom
          */
-        $('.easyzoom').easyZoom();
+        // $('.easyzoom').easyZoom();
 
         /**
          *  PriceFilter
