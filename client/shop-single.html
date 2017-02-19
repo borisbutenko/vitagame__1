@@ -46,13 +46,24 @@
       <section class="section main__shop-single">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12">
-              <h2 class="h2 main__h2">Shop single</h2>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h2 class="h2 main__h2">Product detail</h2>
             </div>
-            <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 pull-right">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="single-sidebar">
+                <form class="form__search">
+                  <input class="input" type="text" name="name" placeholder="Search">
+                  <button class="button-search" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="product-content-box">
                 <div class="row">
-                  <div class="col-md-6 img-box">
+                  <div class="col-md-12">
+                    <h2>Depubox Number</h2>
+                  </div>
+                  <div class="col-md-4 img-box">
                     <div class="flexslider">
                       <div class="flex-viewport">
                         <ul class="slides">
@@ -72,10 +83,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-4">
                     <div class="content-box">
                       <div class="col-md-12 col-sm-12 col-xs-12">
-                        <h2>Start From The Art</h2>
+                        <h2>Dimension</h2>
                         <div class="review-box">
                           <ul>
                             <li><i class="fa fa-star"></i></li>
@@ -87,22 +98,20 @@
                         </div><span class="price">$200.99</span>
                       </div>
                       <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h2>Cross ref.</h2>
                         <div class="text">
                           <p>Working from home meant we couldsnack and coffee our breaks change our desks or view, good, drink on the job, even spend the day in pajamas consequences that are extremely.</p>
                         </div>
-                        <div class="location-box">
-                          <p>Check Delivery Option at Your Location:</p>
-                        </div>
+                        <!--.location-box-->
+                        <!--	p Check Delivery Option at Your Location:-->
                       </div>
-                      <form>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input class="input" type="text" name="name" placeholder="Pincode">
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <button class="button button-gray" type="submit">Check</button>
-                        </div>
-                      </form>
-                      <div class="col-md-12 col-sm-12 col-xs-12"><span class="delivery-info">Expected Delivery in 4-10 Days</span></div>
+                      <form></form>
+                      <!--	.col-md-6.col-sm-6.col-xs-12-->
+                      <!--		input.input(type='text' name='name' placeholder='Pincode')-->
+                      <!--	.col-md-6.col-sm-6.col-xs-12-->
+                      <!--		button.button.button-gray(type='submit') Check-->
+                      <!--.col-md-12.col-sm-12.col-xs-12-->
+                      <!--	span.delivery-info Expected Delivery in 4-10 Days-->
                       <div class="addto-cart-box">
                         <div class="col-md-6 col-sm-6 col-xs-6">
                           <div class="input-group bootstrap-touchspin">
@@ -113,6 +122,11 @@
                           <button class="button button-yellow" type="button">Add to Cart</button>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="application">
+                      <h2>Application</h2>
                     </div>
                   </div>
                 </div>
@@ -336,145 +350,85 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-7 col-xs-12 pull-left">
-              <aside class="sidebar-wrapper">
-                <div class="single-sidebar">
-                  <form class="form__search">
-                    <input class="input" type="text" name="name" placeholder="Search">
-                    <button class="button-search" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                  </form>
-                </div>
-                <div class="single-sidebar">
-                  <h2 class="sidebar-title">categories</h2>
-                  <hr>
-                  <ul class="categories clearfix" id="categories" role="tablist" aria-multiselectable="true">
-                    <li><a href="#product-1" data-parent="#categories" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseOne"><i class="fa fa-angle-right" aria-hidden="true"></i>Manufacturing<span>(5)</span></a>
-                      <div class="collapse" id="product-1" role="tabpanel" aria-labelledby="headingOne">
-                        <ul class="categories__items-list">
-                          <li><a href="#0">item-1</a></li>
-                          <li><a href="#0">item-2</a></li>
-                          <li><a href="#0">item-3</a></li>
-                          <li><a href="#0">item-4</a></li>
-                          <li><a href="#0">item-5</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li><a href="#product-2" data-parent="#categories" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-angle-right" aria-hidden="true"></i>Agriculture<span>(5)</span></a>
-                      <div class="collapse" id="product-2" role="tabpanel" aria-labelledby="headingTwo">
-                        <ul class="categories__items-list">
-                          <li><a href="#0">item-1</a></li>
-                          <li><a href="#0">item-2</a></li>
-                          <li><a href="#0">item-3</a></li>
-                          <li><a href="#0">item-4</a></li>
-                          <li><a href="#0">item-5</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li><a href="#product-3" data-parent="#categories" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree"><i class="fa fa-angle-right" aria-hidden="true"></i>Pharmacology<span>(5)</span></a>
-                      <div class="collapse" id="product-3" role="tabpanel" aria-labelledby="headingThree">
-                        <ul class="categories__items-list">
-                          <li><a href="#0">item-1</a></li>
-                          <li><a href="#0">item-2</a></li>
-                          <li><a href="#0">item-3</a></li>
-                          <li><a href="#0">item-4</a></li>
-                          <li><a href="#0">item-5</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li><a href="#product-4" data-parent="#categories" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-angle-right" aria-hidden="true"></i>Latest Technology<span>(5)</span></a>
-                      <div class="collapse" id="product-4" role="tabpanel" aria-labelledby="headingFour">
-                        <ul class="categories__items-list">
-                          <li><a href="#0">item-1</a></li>
-                          <li><a href="#0">item-2</a></li>
-                          <li><a href="#0">item-3</a></li>
-                          <li><a href="#0">item-4</a></li>
-                          <li><a href="#0">item-5</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="single-sidebar">
-                  <div class="sidebar-title">FILTER BY PRICE</div>
-                  <hr>
-                  <div class="range-slider-price" id="range-slider-price"></div>
-                  <div class="form-group clearfix">
-                    <p>	price: $
-                      <input class="val-box" id="min-value-rangeslider" type="text" readonly>-$
-                      <input class="val-box" id="max-value-rangeslider" type="text" readonly>
-                    </p>
-                    <button class="button button-yellow" type="button">Filter</button>
-                  </div>
-                </div>
-                <div class="single-sidebar">
-                  <div class="sidebar-title">Latest Products</div>
-                  <hr>
-                  <ul class="latest-product">
-                    <li>
-                      <div class="img-holder"><img src="assets/img/instagram/instagram-2.jpg" alt="0">
-                        <div class="overlay-box">
-                          <div class="box">
-                            <div class="content"><a href="#0"><i class="fa fa-link"></i></a></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="title">
-                        <h3><a href="#0">Start From The Art</a></h3>
-                        <p><span><i class="fa fa-usd"></i>50.55</span>
-                          <del><i class="fa fa-usd"></i>80.88</del>
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="img-holder"><img src="assets/img/instagram/instagram-2.jpg" alt="1">
-                        <div class="overlay-box">
-                          <div class="box">
-                            <div class="content"><a href="#0"><i class="fa fa-link"></i></a></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="title">
-                        <h3><a href="#0">Start From The Art</a></h3>
-                        <p><span><i class="fa fa-usd"></i>50.55</span>
-                          <del><i class="fa fa-usd"></i>80.88</del>
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="img-holder"><img src="assets/img/instagram/instagram-2.jpg" alt="2">
-                        <div class="overlay-box">
-                          <div class="box">
-                            <div class="content"><a href="#0"><i class="fa fa-link"></i></a></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="title">
-                        <h3><a href="#0">Start From The Art</a></h3>
-                        <p><span><i class="fa fa-usd"></i>50.55</span>
-                          <del><i class="fa fa-usd"></i>80.88</del>
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="single-sidebar">
-                  <div class="sidebar-title">PRODUCT TAG</div>
-                  <hr>
-                  <ul class="product-tag">
-                    <li><a href="#0">tag-0</a></li>
-                    <li><a href="#0">tag-1</a></li>
-                    <li><a href="#0">tag-2</a></li>
-                    <li><a href="#0">tag-3</a></li>
-                    <li><a href="#0">tag-4</a></li>
-                    <li><a href="#0">tag-5</a></li>
-                    <li><a href="#0">tag-6</a></li>
-                    <li><a href="#0">tag-7</a></li>
-                    <li><a href="#0">tag-8</a></li>
-                    <li><a href="#0">tag-9</a></li>
-                  </ul>
-                </div>
-              </aside>
-            </div>
+            <!--.col-lg-3.col-md-4.col-sm-7.col-xs-12.pull-left-->
+            <!--	aside.sidebar-wrapper-->
+            <!--		.single-sidebar-->
+            <!--			form.form__search-->
+            <!--				input.input(type='text' name='name' placeholder='Search')-->
+            <!--				button.button-search(type='submit')-->
+            <!--					i.fa.fa-search(aria-hidden='true')-->
+            <!--		.single-sidebar-->
+            <!--			h2.sidebar-title categories-->
+            <!--			hr-->
+            <!--			ul#categories.categories.clearfix(role='tablist' aria-multiselectable='true')-->
+            <!--				li-->
+            <!--					a(href='#product-1' data-parent='#categories' role='button' data-toggle='collapse' aria-expanded='false' aria-controls='collapseOne')-->
+            <!--						i.fa.fa-angle-right(aria-hidden='true')-->
+            <!--						| Manufacturing-->
+            <!--						span (5)-->
+            <!--					+items(1, 'One')-->
+            <!--				li-->
+            <!--					a(href='#product-2' data-parent='#categories' role='button' data-toggle='collapse' aria-expanded='false' aria-controls='collapseTwo')-->
+            <!--						i.fa.fa-angle-right(aria-hidden='true')-->
+            <!--						| Agriculture-->
+            <!--						span (5)-->
+            <!--					+items(2, 'Two')-->
+            <!--				li-->
+            <!--					a(href='#product-3' data-parent='#categories' role='button' data-toggle='collapse' aria-expanded='false' aria-controls='collapseThree')-->
+            <!--						i.fa.fa-angle-right(aria-hidden='true')-->
+            <!--						| Pharmacology-->
+            <!--						span (5)-->
+            <!--					+items(3, 'Three')-->
+            <!--				li-->
+            <!--					a(href='#product-4' data-parent='#categories' role='button' data-toggle='collapse' aria-expanded='false' aria-controls='collapseFour')-->
+            <!--						i.fa.fa-angle-right(aria-hidden='true')-->
+            <!--						| Latest Technology-->
+            <!--						span (5)-->
+            <!--					+items(4, 'Four')-->
+            <!--		.single-sidebar-->
+            <!--			.sidebar-title FILTER BY PRICE-->
+            <!--			hr-->
+            <!--			#range-slider-price.range-slider-price-->
+            <!--			.form-group.clearfix-->
+            <!--				p-->
+            <!--					|	price: $-->
+            <!--					input#min-value-rangeslider.val-box(type='text' readonly)-->
+            <!--					| -$-->
+            <!--					input#max-value-rangeslider.val-box(type='text' readonly)-->
+            <!--				button.button.button-yellow(type='button') Filter-->
+            <!--		.single-sidebar-->
+            <!--			.sidebar-title Latest Products-->
+            <!--			hr-->
+            <!--			ul.latest-product-->
+            <!--				- var n = 0-->
+            <!--				while n < 3-->
+            <!--					li-->
+            <!--						.img-holder-->
+            <!--							img(src='assets/img/instagram/instagram-2.jpg' alt=n++)-->
+            <!--							.overlay-box-->
+            <!--								.box-->
+            <!--									.content-->
+            <!--										a(href='#0')-->
+            <!--											i.fa.fa-link-->
+            <!--						.title-->
+            <!--							h3-->
+            <!--								a(href='#0') Start From The Art-->
+            <!--							p-->
+            <!--								span-->
+            <!--									i.fa.fa-usd-->
+            <!--									| 50.55-->
+            <!--								del-->
+            <!--									i.fa.fa-usd-->
+            <!--									| 80.88-->
+            <!--		.single-sidebar-->
+            <!--			.sidebar-title PRODUCT TAG-->
+            <!--			hr-->
+            <!--			ul.product-tag-->
+            <!--				- var n = 0-->
+            <!--				while n < 10-->
+            <!--					- var tag = 'tag-' + n++;-->
+            <!--					li-->
+            <!--						a(href='#0')= tag-->
           </div>
         </div>
       </section>

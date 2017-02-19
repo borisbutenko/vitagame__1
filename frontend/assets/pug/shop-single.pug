@@ -25,12 +25,20 @@ block main
 	section.section.main__shop-single
 		.container
 			.row
-				.col-md-6.col-sm-6.col-xs-12
-					h2.h2.main__h2 Shop single
-				.col-lg-9.col-md-8.col-sm-12.col-xs-12.pull-right
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12
+					h2.h2.main__h2 Product detail
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12
+					.single-sidebar
+						form.form__search
+							input.input(type='text' name='name' placeholder='Search')
+							button.button-search(type='submit')
+								i.fa.fa-search(aria-hidden='true')
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12
 					.product-content-box
 						.row
-							.col-md-6.img-box
+							.col-md-12
+								h2 Depubox Number
+							.col-md-4.img-box
 								.flexslider
 									.flex-viewport
 										ul.slides
@@ -41,10 +49,10 @@ block main
 														a(href='assets/img/slider__gallery-shop/2.jpg')
 															img.img-responsive(src='assets/img/slider__gallery-shop/2.jpg' alt='' data-zoom-image='assets/img/slider__gallery-shop/2.jpg' draggable='false')
 												- n++
-							.col-md-6
+							.col-md-4
 								.content-box
 									.col-md-12.col-sm-12.col-xs-12
-										h2 Start From The Art
+										h2 Dimension
 										.review-box
 											ul
 												- var n = 0
@@ -55,23 +63,27 @@ block main
 											span (2 Reviews)
 										span.price $200.99
 									.col-md-12.col-sm-12.col-xs-12
+										h2 Cross ref.
 										.text
 											p Working from home meant we couldsnack and coffee our breaks change our desks or view, good, drink on the job, even spend the day in pajamas consequences that are extremely.
-										.location-box
-											p Check Delivery Option at Your Location:
+										//.location-box
+										//	p Check Delivery Option at Your Location:
 									form
-										.col-md-6.col-sm-6.col-xs-12
-											input.input(type='text' name='name' placeholder='Pincode')
-										.col-md-6.col-sm-6.col-xs-12
-											button.button.button-gray(type='submit') Check
-									.col-md-12.col-sm-12.col-xs-12
-										span.delivery-info Expected Delivery in 4-10 Days
+									//	.col-md-6.col-sm-6.col-xs-12
+									//		input.input(type='text' name='name' placeholder='Pincode')
+									//	.col-md-6.col-sm-6.col-xs-12
+									//		button.button.button-gray(type='submit') Check
+									//.col-md-12.col-sm-12.col-xs-12
+									//	span.delivery-info Expected Delivery in 4-10 Days
 									.addto-cart-box
 										.col-md-6.col-sm-6.col-xs-6
 											.input-group.bootstrap-touchspin
 												input#cart-touchspin.input.quantity-spinner.form-control.input-touchspin(type='text' name='cart-touchspin' value='2')
 										.col-md-6.col-sm-6.col-xs-6
 											button.button.button-yellow(type='button') Add to Cart
+							.col-md-4
+								.application
+									h2 Application
 					.product-tab-box
 						ul.nav.nav-tabs.tab-menu
 							li.active
@@ -163,82 +175,82 @@ block main
 						.row
 							.col-md-12
 								include __blocks/slider__gallery-shop
-				.col-lg-3.col-md-4.col-sm-7.col-xs-12.pull-left
-					aside.sidebar-wrapper
-						.single-sidebar
-							form.form__search
-								input.input(type='text' name='name' placeholder='Search')
-								button.button-search(type='submit')
-									i.fa.fa-search(aria-hidden='true')
-						.single-sidebar
-							h2.sidebar-title categories
-							hr
-							ul#categories.categories.clearfix(role='tablist' aria-multiselectable='true')
-								li
-									a(href='#product-1' data-parent='#categories' role='button' data-toggle='collapse' aria-expanded='false' aria-controls='collapseOne')
-										i.fa.fa-angle-right(aria-hidden='true')
-										| Manufacturing
-										span (5)
-									+items(1, 'One')
-								li
-									a(href='#product-2' data-parent='#categories' role='button' data-toggle='collapse' aria-expanded='false' aria-controls='collapseTwo')
-										i.fa.fa-angle-right(aria-hidden='true')
-										| Agriculture
-										span (5)
-									+items(2, 'Two')
-								li
-									a(href='#product-3' data-parent='#categories' role='button' data-toggle='collapse' aria-expanded='false' aria-controls='collapseThree')
-										i.fa.fa-angle-right(aria-hidden='true')
-										| Pharmacology
-										span (5)
-									+items(3, 'Three')
-								li
-									a(href='#product-4' data-parent='#categories' role='button' data-toggle='collapse' aria-expanded='false' aria-controls='collapseFour')
-										i.fa.fa-angle-right(aria-hidden='true')
-										| Latest Technology
-										span (5)
-									+items(4, 'Four')
-						.single-sidebar
-							.sidebar-title FILTER BY PRICE
-							hr
-							#range-slider-price.range-slider-price
-							.form-group.clearfix
-								p
-									|	price: $
-									input#min-value-rangeslider.val-box(type='text' readonly)
-									| -$
-									input#max-value-rangeslider.val-box(type='text' readonly)
-								button.button.button-yellow(type='button') Filter
-						.single-sidebar
-							.sidebar-title Latest Products
-							hr
-							ul.latest-product
-								- var n = 0
-								while n < 3
-									li
-										.img-holder
-											img(src='assets/img/instagram/instagram-2.jpg' alt=n++)
-											.overlay-box
-												.box
-													.content
-														a(href='#0')
-															i.fa.fa-link
-										.title
-											h3
-												a(href='#0') Start From The Art
-											p
-												span
-													i.fa.fa-usd
-													| 50.55
-												del
-													i.fa.fa-usd
-													| 80.88
-						.single-sidebar
-							.sidebar-title PRODUCT TAG
-							hr
-							ul.product-tag
-								- var n = 0
-								while n < 10
-									- var tag = 'tag-' + n++;
-									li
-										a(href='#0')= tag
+				//.col-lg-3.col-md-4.col-sm-7.col-xs-12.pull-left
+				//	aside.sidebar-wrapper
+				//		.single-sidebar
+				//			form.form__search
+				//				input.input(type='text' name='name' placeholder='Search')
+				//				button.button-search(type='submit')
+				//					i.fa.fa-search(aria-hidden='true')
+				//		.single-sidebar
+				//			h2.sidebar-title categories
+				//			hr
+				//			ul#categories.categories.clearfix(role='tablist' aria-multiselectable='true')
+				//				li
+				//					a(href='#product-1' data-parent='#categories' role='button' data-toggle='collapse' aria-expanded='false' aria-controls='collapseOne')
+				//						i.fa.fa-angle-right(aria-hidden='true')
+				//						| Manufacturing
+				//						span (5)
+				//					+items(1, 'One')
+				//				li
+				//					a(href='#product-2' data-parent='#categories' role='button' data-toggle='collapse' aria-expanded='false' aria-controls='collapseTwo')
+				//						i.fa.fa-angle-right(aria-hidden='true')
+				//						| Agriculture
+				//						span (5)
+				//					+items(2, 'Two')
+				//				li
+				//					a(href='#product-3' data-parent='#categories' role='button' data-toggle='collapse' aria-expanded='false' aria-controls='collapseThree')
+				//						i.fa.fa-angle-right(aria-hidden='true')
+				//						| Pharmacology
+				//						span (5)
+				//					+items(3, 'Three')
+				//				li
+				//					a(href='#product-4' data-parent='#categories' role='button' data-toggle='collapse' aria-expanded='false' aria-controls='collapseFour')
+				//						i.fa.fa-angle-right(aria-hidden='true')
+				//						| Latest Technology
+				//						span (5)
+				//					+items(4, 'Four')
+				//		.single-sidebar
+				//			.sidebar-title FILTER BY PRICE
+				//			hr
+				//			#range-slider-price.range-slider-price
+				//			.form-group.clearfix
+				//				p
+				//					|	price: $
+				//					input#min-value-rangeslider.val-box(type='text' readonly)
+				//					| -$
+				//					input#max-value-rangeslider.val-box(type='text' readonly)
+				//				button.button.button-yellow(type='button') Filter
+				//		.single-sidebar
+				//			.sidebar-title Latest Products
+				//			hr
+				//			ul.latest-product
+				//				- var n = 0
+				//				while n < 3
+				//					li
+				//						.img-holder
+				//							img(src='assets/img/instagram/instagram-2.jpg' alt=n++)
+				//							.overlay-box
+				//								.box
+				//									.content
+				//										a(href='#0')
+				//											i.fa.fa-link
+				//						.title
+				//							h3
+				//								a(href='#0') Start From The Art
+				//							p
+				//								span
+				//									i.fa.fa-usd
+				//									| 50.55
+				//								del
+				//									i.fa.fa-usd
+				//									| 80.88
+				//		.single-sidebar
+				//			.sidebar-title PRODUCT TAG
+				//			hr
+				//			ul.product-tag
+				//				- var n = 0
+				//				while n < 10
+				//					- var tag = 'tag-' + n++;
+				//					li
+				//						a(href='#0')= tag
