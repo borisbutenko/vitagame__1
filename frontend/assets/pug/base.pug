@@ -9,9 +9,10 @@ html(lang='en')
 		include __assets/styles
 		include __assets/scripts
 	body
-		include __blocks/header
-		main.main
-			block main
+		.wrapper
+			include __blocks/header
+			main.main
+				block main
 		include __blocks/footer
 		.scroll-to-top.scroll-to-top-hide
 			span.fa.fa-angle-up.scroll-to-top__icon

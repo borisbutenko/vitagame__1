@@ -1,21 +1,16 @@
-*
-  margin: 0
-
-html,
-body
+html
   height: 100%
 
-.main
-  //min-height: 100%
-  /* equal to footer height */
-  //margin-bottom: -47.1rem
-  &::after
-    content: ""
-    display: block
+body
+  min-height: 100%
+  display: flex
+  flex-direction: column
+
+.wrapper
+  flex: 1
 
 .footer
   margin-top: 5rem
-  height: 47.1rem
 
 .section__footer-top
   background: #292929

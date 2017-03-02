@@ -11,191 +11,193 @@
     <script src="assets/js/main.min.js"></script>
   </head>
   <body>
-    <header class="header">
-      <section class="section section__menu-main">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-10 col-sm-12 col-xs-12">
-              <nav class="navbar navbar-default navbar-fixed-top menu-main">
-                <div class="container">
-                  <div class="row">
-                    <div class="navbar-header menu-main__navbar-header">
-                      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#menu-main" aria-expanded="false"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="menu-main">
-                      <ul class="nav navbar-nav menu-main__list">
-                        <li class="menu-main__item"><a class="menu-main__link" href="index.html">home</a></li>
-                        <li class="menu-main__item"><a class="menu-main__link" href="#0">about us</a></li>
-                        <li class="menu-main__item"><a class="menu-main__link" href="#0">services</a></li>
-                        <li class="menu-main__item menu-main__item-dropdown"><a class="menu-main__link menu-main__link-dropdown" href="#0">products
-                            <ul class="menu-main__list-dropdown"><a class="menu-main__link menu-main__link-sub" href="#0">oil filter</a><a class="menu-main__link menu-main__link-sub" href="#0">fuel filter</a><a class="menu-main__link menu-main__link-sub" href="#0">air filter</a>
-                            </ul></a></li>
-                        <li class="menu-main__item"><a class="menu-main__link" href="search.html">filter search</a></li>
-                        <li class="menu-main__item"><a class="menu-main__link" href="contacts.html">contacts</a></li><a class="menu-main__logo" href="index.html"><img src="assets/img/logo.png" alt=""></a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </section>
-    </header>
-    <main class="main">
-      <section class="section main__slider">
-        <div class="swiper-container slider-main">
-          <div class="swiper-wrapper slider-main__wrapper">
-            <div class="swiper-slide slider-main__slide">
-              <div class="slider-main__img" style="background-image:url(assets/img/slider__main/1.jpg);">
-                <div class="slider-main__container">
-                  <h2 class="slider-main__title">Slide 1</h2>
-                  <p class="slider-main__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button button-yellow slider-main__button" href="#0">read more</a><a class="button button-gray slider-main__button" href="#0">our solutions</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide slider-main__slide">
-              <div class="slider-main__img" style="background-image:url(assets/img/slider__main/2.jpg);">
-                <div class="slider-main__container">
-                  <h2 class="slider-main__title">Slide 2</h2>
-                  <p class="slider-main__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button button-yellow slider-main__button" href="#0">read more</a><a class="button button-gray slider-main__button" href="#0">our solutions</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide slider-main__slide">
-              <div class="slider-main__img" style="background-image:url(assets/img/slider__main/3.jpg);">
-                <div class="slider-main__container">
-                  <h2 class="slider-main__title">Slide 3</h2>
-                  <p class="slider-main__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button button-yellow slider-main__button" href="#0">read more</a><a class="button button-gray slider-main__button" href="#0">our solutions</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination slider-main__pagination"></div>
-          <div class="swiper-button-prev slider-main__prev"></div>
-          <div class="swiper-button-next slider-main__next"></div>
-        </div>
-      </section>
-      <section class="section main__about">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12">
-              <h2 class="h2 main__h2">About us</h2>
-              <p class="main__about__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
-              <h2 class="h2 main__h2">Search filter</h2>
-              <form class="form__search">
-                <div class="row">
-                  <div class="col-md-12">
+    <div class="wrapper">
+      <header class="header">
+        <section class="section section__menu-main">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-sm-12 col-xs-12">
+                <nav class="navbar navbar-default navbar-fixed-top menu-main">
+                  <div class="container">
                     <div class="row">
-                      <div class="col-md-6">
-                        <input class="input" type="text" name="name" placeholder="Your Name*">
+                      <div class="navbar-header menu-main__navbar-header">
+                        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#menu-main" aria-expanded="false"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                       </div>
-                      <div class="col-md-6">
-                        <input class="input" type="text" name="name" placeholder="Email Address*">
-                      </div>
-                      <div class="col-md-6">
-                        <input class="input" type="text" name="name" placeholder="Phone Num">
-                      </div>
-                      <div class="col-md-6">
-                        <select class="select select__search-form">
-                          <option>Solution One</option>
-                          <option>Solution Two</option>
-                          <option>Solution Three</option>
-                        </select>
-                      </div>
-                      <div class="col-md-12">
-                        <textarea class="textarea" name="message" placeholder="Write Your Needs..."></textarea>
-                      </div>
-                      <div class="col-md-12">
-                        <button class="button button-yellow" type="button" data-toggle="modal" data-target="#modal-search">search</button>
+                      <div class="collapse navbar-collapse" id="menu-main">
+                        <ul class="nav navbar-nav menu-main__list">
+                          <li class="menu-main__item"><a class="menu-main__link" href="index.html">home</a></li>
+                          <li class="menu-main__item"><a class="menu-main__link" href="#0">about us</a></li>
+                          <li class="menu-main__item"><a class="menu-main__link" href="#0">services</a></li>
+                          <li class="menu-main__item menu-main__item-dropdown"><a class="menu-main__link menu-main__link-dropdown" href="#0">products
+                              <ul class="menu-main__list-dropdown"><a class="menu-main__link menu-main__link-sub" href="#0">oil filter</a><a class="menu-main__link menu-main__link-sub" href="#0">fuel filter</a><a class="menu-main__link menu-main__link-sub" href="#0">air filter</a>
+                              </ul></a></li>
+                          <li class="menu-main__item"><a class="menu-main__link" href="search.html">filter search</a></li>
+                          <li class="menu-main__item"><a class="menu-main__link" href="contacts.html">contacts</a></li><a class="menu-main__logo" href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                        </ul>
                       </div>
                     </div>
                   </div>
-                </div>
-              </form>
+                </nav>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="section main__gallery">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <h2 class="h2 main__h2">photo gallery</h2>
-              <div class="swiper-container slider-gallery">
-                <div class="swiper-wrapper slider-gallery__wrapper">
-                  <div class="swiper-slide slider-gallery__slide"><a href="assets/img/slider__main/3.jpg" data-lightbox="gallery" data-title="Large image">
-                      <div class="slider-gallery__img" style="background-image:url(assets/img/slider__gallery/1.jpg);">
-                        <div class="slider-gallery__container">
-                          <div class="slider-gallery__box"><i class="fa fa-eye"></i></div>
-                        </div>
-                      </div></a></div>
-                  <div class="swiper-slide slider-gallery__slide"><a href="assets/img/slider__main/3.jpg" data-lightbox="gallery" data-title="Large image">
-                      <div class="slider-gallery__img" style="background-image:url(assets/img/slider__gallery/2.jpg);">
-                        <div class="slider-gallery__container">
-                          <div class="slider-gallery__box"><i class="fa fa-eye"></i></div>
-                        </div>
-                      </div></a></div>
-                  <div class="swiper-slide slider-gallery__slide"><a href="assets/img/slider__main/3.jpg" data-lightbox="gallery" data-title="Large image">
-                      <div class="slider-gallery__img" style="background-image:url(assets/img/slider__gallery/3.jpg);">
-                        <div class="slider-gallery__container">
-                          <div class="slider-gallery__box"><i class="fa fa-eye"></i></div>
-                        </div>
-                      </div></a></div>
-                  <div class="swiper-slide slider-gallery__slide"><a href="assets/img/slider__main/3.jpg" data-lightbox="gallery" data-title="Large image">
-                      <div class="slider-gallery__img" style="background-image:url(assets/img/slider__gallery/1.jpg);">
-                        <div class="slider-gallery__container">
-                          <div class="slider-gallery__box"><i class="fa fa-eye"></i></div>
-                        </div>
-                      </div></a></div>
-                  <div class="swiper-slide slider-gallery__slide"><a href="assets/img/slider__main/3.jpg" data-lightbox="gallery" data-title="Large image">
-                      <div class="slider-gallery__img" style="background-image:url(assets/img/slider__gallery/2.jpg);">
-                        <div class="slider-gallery__container">
-                          <div class="slider-gallery__box"><i class="fa fa-eye"></i></div>
-                        </div>
-                      </div></a></div>
-                  <div class="swiper-slide slider-gallery__slide"><a href="assets/img/slider__main/3.jpg" data-lightbox="gallery" data-title="Large image">
-                      <div class="slider-gallery__img" style="background-image:url(assets/img/slider__gallery/3.jpg);">
-                        <div class="slider-gallery__container">
-                          <div class="slider-gallery__box"><i class="fa fa-eye"></i></div>
-                        </div>
-                      </div></a></div>
+        </section>
+      </header>
+      <main class="main">
+        <section class="section main__slider">
+          <div class="swiper-container slider-main">
+            <div class="swiper-wrapper slider-main__wrapper">
+              <div class="swiper-slide slider-main__slide">
+                <div class="slider-main__img" style="background-image:url(assets/img/slider__main/1.jpg);">
+                  <div class="slider-main__container">
+                    <h2 class="slider-main__title">Slide 1</h2>
+                    <p class="slider-main__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button button-yellow slider-main__button" href="#0">read more</a><a class="button button-gray slider-main__button" href="#0">our solutions</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slider-main__slide">
+                <div class="slider-main__img" style="background-image:url(assets/img/slider__main/2.jpg);">
+                  <div class="slider-main__container">
+                    <h2 class="slider-main__title">Slide 2</h2>
+                    <p class="slider-main__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button button-yellow slider-main__button" href="#0">read more</a><a class="button button-gray slider-main__button" href="#0">our solutions</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slider-main__slide">
+                <div class="slider-main__img" style="background-image:url(assets/img/slider__main/3.jpg);">
+                  <div class="slider-main__container">
+                    <h2 class="slider-main__title">Slide 3</h2>
+                    <p class="slider-main__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button button-yellow slider-main__button" href="#0">read more</a><a class="button button-gray slider-main__button" href="#0">our solutions</a>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="swiper-pagination slider-main__pagination"></div>
+            <div class="swiper-button-prev slider-main__prev"></div>
+            <div class="swiper-button-next slider-main__next"></div>
           </div>
-        </div>
-      </section>
-      <section class="section main__choose">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-12">
-              <div class="choose"><span class="choose__icon flaticon-avatar"></span>
-                <h3 class="choose__title">WE ARE PROFESSIONAL</h3>
-                <h5 class="choose__sub-title">Engineers</h5>
-                <p class="choose__desc">How all this mistakens idea of denouncing pleasures and completed account.</p>
+        </section>
+        <section class="section main__about">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <h2 class="h2 main__h2">About us</h2>
+                <p class="main__about__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-12">
-              <div class="choose"><span class="choose__icon flaticon-interface-2"></span>
-                <h3 class="choose__title">WE ARE TRUSTED</h3>
-                <h5 class="choose__sub-title">Team Members</h5>
-                <p class="choose__desc">Idea denouncing pleasures and praisings pain was born great explorer.</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-12">
-              <div class="choose"><span class="choose__icon flaticon-tool-1"></span>
-                <h3 class="choose__title">WE ARE EXPERT</h3>
-                <h5 class="choose__sub-title">Designer</h5>
-                <p class="choose__desc">Denouncing pleasures and was born work will give you a complete masters.</p>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <h2 class="h2 main__h2">Search filter</h2>
+                <form class="form__search">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input class="input" type="text" name="name" placeholder="Your Name*">
+                        </div>
+                        <div class="col-md-6">
+                          <input class="input" type="text" name="name" placeholder="Email Address*">
+                        </div>
+                        <div class="col-md-6">
+                          <input class="input" type="text" name="name" placeholder="Phone Num">
+                        </div>
+                        <div class="col-md-6">
+                          <select class="select select__search-form">
+                            <option>Solution One</option>
+                            <option>Solution Two</option>
+                            <option>Solution Three</option>
+                          </select>
+                        </div>
+                        <div class="col-md-12">
+                          <textarea class="textarea" name="message" placeholder="Write Your Needs..."></textarea>
+                        </div>
+                        <div class="col-md-12">
+                          <button class="button button-yellow" type="button" data-toggle="modal" data-target="#modal-search">search</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+        <section class="section main__gallery">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <h2 class="h2 main__h2">photo gallery</h2>
+                <div class="swiper-container slider-gallery">
+                  <div class="swiper-wrapper slider-gallery__wrapper">
+                    <div class="swiper-slide slider-gallery__slide"><a href="assets/img/slider__main/3.jpg" data-lightbox="gallery" data-title="Large image">
+                        <div class="slider-gallery__img" style="background-image:url(assets/img/slider__gallery/1.jpg);">
+                          <div class="slider-gallery__container">
+                            <div class="slider-gallery__box"><i class="fa fa-eye"></i></div>
+                          </div>
+                        </div></a></div>
+                    <div class="swiper-slide slider-gallery__slide"><a href="assets/img/slider__main/3.jpg" data-lightbox="gallery" data-title="Large image">
+                        <div class="slider-gallery__img" style="background-image:url(assets/img/slider__gallery/2.jpg);">
+                          <div class="slider-gallery__container">
+                            <div class="slider-gallery__box"><i class="fa fa-eye"></i></div>
+                          </div>
+                        </div></a></div>
+                    <div class="swiper-slide slider-gallery__slide"><a href="assets/img/slider__main/3.jpg" data-lightbox="gallery" data-title="Large image">
+                        <div class="slider-gallery__img" style="background-image:url(assets/img/slider__gallery/3.jpg);">
+                          <div class="slider-gallery__container">
+                            <div class="slider-gallery__box"><i class="fa fa-eye"></i></div>
+                          </div>
+                        </div></a></div>
+                    <div class="swiper-slide slider-gallery__slide"><a href="assets/img/slider__main/3.jpg" data-lightbox="gallery" data-title="Large image">
+                        <div class="slider-gallery__img" style="background-image:url(assets/img/slider__gallery/1.jpg);">
+                          <div class="slider-gallery__container">
+                            <div class="slider-gallery__box"><i class="fa fa-eye"></i></div>
+                          </div>
+                        </div></a></div>
+                    <div class="swiper-slide slider-gallery__slide"><a href="assets/img/slider__main/3.jpg" data-lightbox="gallery" data-title="Large image">
+                        <div class="slider-gallery__img" style="background-image:url(assets/img/slider__gallery/2.jpg);">
+                          <div class="slider-gallery__container">
+                            <div class="slider-gallery__box"><i class="fa fa-eye"></i></div>
+                          </div>
+                        </div></a></div>
+                    <div class="swiper-slide slider-gallery__slide"><a href="assets/img/slider__main/3.jpg" data-lightbox="gallery" data-title="Large image">
+                        <div class="slider-gallery__img" style="background-image:url(assets/img/slider__gallery/3.jpg);">
+                          <div class="slider-gallery__container">
+                            <div class="slider-gallery__box"><i class="fa fa-eye"></i></div>
+                          </div>
+                        </div></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section main__choose">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="choose"><span class="choose__icon flaticon-avatar"></span>
+                  <h3 class="choose__title">WE ARE PROFESSIONAL</h3>
+                  <h5 class="choose__sub-title">Engineers</h5>
+                  <p class="choose__desc">How all this mistakens idea of denouncing pleasures and completed account.</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="choose"><span class="choose__icon flaticon-interface-2"></span>
+                  <h3 class="choose__title">WE ARE TRUSTED</h3>
+                  <h5 class="choose__sub-title">Team Members</h5>
+                  <p class="choose__desc">Idea denouncing pleasures and praisings pain was born great explorer.</p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="choose"><span class="choose__icon flaticon-tool-1"></span>
+                  <h3 class="choose__title">WE ARE EXPERT</h3>
+                  <h5 class="choose__sub-title">Designer</h5>
+                  <p class="choose__desc">Denouncing pleasures and was born work will give you a complete masters.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
     <footer class="footer">
       <section class="section section__footer-top">
         <div class="container">

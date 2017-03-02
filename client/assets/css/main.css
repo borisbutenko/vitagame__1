@@ -1,4 +1,4 @@
-@font-face {
+fonts@font-face {
   font-family: 'Eurosile Bold Condensed';
   src: url("../fonts/Eurostile/Eurostile-Bold-Condensed.eot");
   src: url("../fonts/Eurostile/Eurostile-Bold-Condensed.eot?#iefix") format('embedded-opentype'), url("../fonts/Eurostile/Eurostile-Bold-Condensed.woff2") format('woff2'), url("../fonts/Eurostile/Eurostile-Bold-Condensed.woff") format('woff'), url("../fonts/Eurostile/Eurostile-Bold-Condensed.ttf") format('truetype'), url("../fonts/Eurostile/Eurostile-Bold-Condensed.svg") format('svg');
@@ -11146,20 +11146,22 @@ select + span.select2 {
   background: #fdc716;
   color: #fff;
 }
-* {
-  margin: 0;
-}
-html,
-body {
+html {
   height: 100%;
 }
-.main::after {
-  content: "";
-  display: block;
+body {
+  min-height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.wrapper {
+  -ms-flex: 1;
+      flex: 1;
 }
 .footer {
   margin-top: 5rem;
-  height: 47.1rem;
 }
 .section__footer-top {
   background: #292929;
